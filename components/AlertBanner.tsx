@@ -1,29 +1,27 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import Container from 'components/BlogContainer'
-
-export default function Alert({
-  preview,
-  loading,
-}: {
-  preview?: boolean
-  loading?: boolean
-}) {
-  if (!preview) return null
-
-  return (
-    <div className="border-b border-accent-7 bg-accent-7 text-white">
+function Banner() {
+    return (
+    <div className="flex flex-col lg:flex-row lg:space-x-5 justify-between font-bold px-10 py-5 mb-10">
       <Container>
-        <div className="py-2 text-center text-sm">
-          {loading ? 'Loading... ' : 'This page is a preview. '}
-          <a
-            href="/api/exit-preview"
-            className="underline transition-colors duration-200 hover:text-cyan"
-          >
-            Click here
-          </a>{' '}
-          to exit preview mode.
-        </div>
-      </Container>
+     <div>
+     <h1 className="text-7xl">ChilledCat's Daily Blog</h1>
+     <h2 className="mt-5 md:mt-0">
+        Welcome to{" "}
+        <span className="underline decoration-4 decoration[#F7AB0A]">
+            Everyone's
+        </span>{" "}
+        favourite blog in the ChilledCat world ^.^
+     </h2>
+     </div>
+
+    <p className="mt-5 md:mt-2 text-gray-400 max-w-sm">
+     New innovative ways to become more happier | live more freely | become a better version of yourself!
+    </p>
+
+    </Container>
     </div>
-  )
+    )
 }
+
+export default Banner
