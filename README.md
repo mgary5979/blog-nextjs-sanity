@@ -1,5 +1,7 @@
 
-[![Deploy with Vercel](https://vercel.com/button)][vercel-deploy]
+[![Deploy with Vercel](https://vercel.com/button)][vercel-deploy]![Untitled design (4)]
+
+(https://github.com/mgary5979/blog-nextjs-sanity/assets/111018323/97d36212-dde8-438a-a334-08db14b45b5d)
 
 
 ## Project Overview
