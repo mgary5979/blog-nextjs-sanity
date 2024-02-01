@@ -1,45 +1,6 @@
-# A Next.js Blog with a Native Authoring Experience<!-- omit in toc -->
-
-This starter is a statically generated blog that uses [Next.js][nextjs] for the frontend and [Sanity][sanity-homepage] to handle its content. It comes with a native Sanity Studio that offers features like real-time collaboration, instant side-by-side content previews, and intuitive editing.
-
-The Studio connects to Sanity Content Lake, which gives you hosted content APIs with a flexible query language, on-demand image transformations, powerful patching, and more. You can use this starter to kick-start a blog or learn these technologies.
 
 [![Deploy with Vercel](https://vercel.com/button)][vercel-deploy]
 
-> **Note**
->
-> This starter uses the `/pages` directory for Next.js routing.
->
-> The template will be migrated to the currently experimental [/app][app-dir] directory
-> when Vercel announce that it is production ready.
-
-## Features
-
-- A performant, static blog with editable posts, authors, and site settings
-- A native and customizable authoring environment, accessible on `yourblog.com/studio`
-- Real-time and collaborative content editing with fine-grained revision history
-- Side-by-side instant content preview that works across your whole site
-- Support for block content and the most advanced custom fields capability in the industry
-- Webhook-triggered Incremental Static Revalidation; no need to wait for a rebuild to publish new content
-- Free and boosted Sanity project with unlimited admin users, free content updates, and pay-as-you-go for API overages
-- A project with starter-friendly and not too heavy-handed TypeScript and Tailwind.css
-
-## Table of Contents
-
-- [Features](#features)
-- [Table of Contents](#table-of-contents)
-- [Project Overview](#project-overview)
-  - [Important files and folders](#important-files-and-folders)
-- [Configuration](#configuration)
-  - [Step 1. Set up the environment](#step-1-set-up-the-environment)
-  - [Step 2. Set up the project locally](#step-2-set-up-the-project-locally)
-  - [Step 3. Run Next.js locally in development mode](#step-3-run-nextjs-locally-in-development-mode)
-  - [Step 4. Deploy to production](#step-4-deploy-to-production)
-- [Questions and Answers](#questions-and-answers)
-  - [It doesn't work! Where can I get help?](#it-doesnt-work-where-can-i-get-help)
-  - [How can I remove the "Next steps" block from my blog?](#how-can-i-remove-the-next-steps-block-from-my-blog)
-  - [How can I set up Incremental Static Revalidation?](#how-can-i-set-up-incremental-static-revalidation)
-- [Next steps](#next-steps)
 
 ## Project Overview
 
@@ -109,30 +70,6 @@ Alternatively, you can deploy without a `git` hosting provider using the Vercel 
 npx vercel --prod
 ```
 
-## Questions and Answers
-
-### It doesn't work! Where can I get help?
-
-In case of any issues or questions, you can post:
-
-- [GitHub Discussions for Next.js][vercel-github]
-- [Sanity's GitHub Discussions][sanity-github]
-- [Sanity's Community Slack][sanity-community]
-
-### How can I remove the "Next steps" block from my blog?
-
-You can remove it by deleting the `IntroTemplate` component in `/components/IndexPage.tsx`.
-
-### How can I set up Incremental Static Revalidation?
-
-Go to the serverless function code in `/pages/api/revalidate.ts`. In the code comments, you'll find instructions for how to set up [ISR][vercel-isr].
-
-## Next steps
-
-- [Join our Slack community to ask questions and get help][sanity-community]
-- [How to edit my content structure?][sanity-schema-types]
-- [How to query content?][sanity-groq]
-- [What is content modelling?][sanity-content-modelling]
 
 [vercel-deploy]: https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsanity-io%2Fnextjs-blog-cms-sanity-v3&repository-name=blog-nextjs-sanity&project-name=blog-nextjs-sanity&demo-title=Blog%20with%20Built-in%20Content%20Editing&demo-description=A%20Sanity-powered%20blog%20with%20built-in%20content%20editing%20%26%20instant%20previews&demo-url=https%3A%2F%2Fnextjs-blog.sanity.build%2F%3Futm_source%3Dvercel%26utm_medium%3Dreferral&demo-image=https%3A%2F%2Fuser-images.githubusercontent.com%2F81981%2F197501516-c7c8092d-0305-4abe-afb7-1e896ef7b90a.png&integration-ids=oac_hb2LITYajhRQ0i4QznmKH7gx&external-id=nextjs;template=nextjs-blog-cms-sanity-v3
 [integration]: https://www.sanity.io/docs/vercel-integration?utm_source=github.com&utm_medium=referral&utm_campaign=nextjs-v3vercelstarter
